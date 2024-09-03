@@ -1,19 +1,21 @@
-let name = prompt("qual é seu nome ?");
-let date = prompt("quantos anos vôce tem ?");
-let peso = prompt("qual é o seu peso ?");
-let altura = prompt("qual é a sua altura ?");
+let name = prompt("qual é o seu nome ?");
+let date = parseInt(prompt("quantos anos você tem ?"));
+let weight = parseInt(prompt("quanto você pesa ?"));
+let height = parseInt(prompt("qual é a sua altura ?"));
+let IMC = 0;
 
-let dataDeNascimento = 2023 - date;
-let IMC = peso / (altura * altura);
-document.write(
+let bornDate = 2023 - date;
+IMC = weight / (height * height);
+
+console.log(
   "Olá ",
   name,
   ", você nasceu em ",
-  dataDeNascimento,
-  ", possui o peso de ",
-  peso,
-  ", tem a altura de ",
-  altura,
-  " e o IMC equivale a: ",
+  bornDate,
+  ", você pesa ",
+  weight,
+  ", sua altura é ",
+  height,
+  " e seu IMC é ",
   IMC
 );
